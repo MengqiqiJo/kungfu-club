@@ -1,0 +1,19 @@
+<div class="container">
+    <nav aria-label="...">
+        <ul class="pager">
+            <li class="previous"><a  ui-sref="viewStudent({id:student.stu_num})"><span aclass="glyphicon glyphicon-hand-left" aria-hidden="true">&larr;</span> Return</a></li>
+        </ul>
+    </nav>
+    <h2>Update Student</h2>
+
+    <form ng-submit="update(student)">
+        <div ng-include="'components/student/form.html'"></div>
+        <div>
+            <button type="submit" class="btn btn-primary"  style="padding-right:200px; margin-bottom:50px"> Update</button>
+        </div>
+    </form>
+
+    <div ng-if="result">
+        result: {{result}}
+    </div>
+</div>

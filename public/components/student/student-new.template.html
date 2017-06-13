@@ -1,0 +1,12 @@
+<div class="container">
+    <nav aria-label="...">
+    <ul class="pager">
+        <li class="previous"><a  ui-sref="students"><span aclass="glyphicon glyphicon-hand-left" aria-hidden="true">&larr;</span> Return</a ></li>
+    </ul>
+    </nav>
+    <h2>Add New Student</h2>
+    <form role="form" ng-submit="add(student)">
+        <div ng-include="'components/student/form.html'"></div>
+        <button type="submit" class="btn btn-primary"  style="padding-right:200px; margin-bottom:50px"> + Add Student</button>
+    </form>
+</div>
